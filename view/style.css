@@ -1,0 +1,117 @@
+/* view/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #f1f1f1;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #33373e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #f5f5f5;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #444951;
+    color: #f1f1f1;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    grid-column: 1 / -1; 
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+button.btn-editar {
+    background-color: #28a745;
+}
+button.btn-editar:hover {
+    background-color: #218838;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #282c34;
+}
+
+table tfoot {
+    font-weight: bold;
+}
+
+.link-acao {
+    color: #00aaff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.link-acao:hover {
+    text-decoration: underline;
+}
+
+.link-excluir {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+.link-excluir:hover {
+    text-decoration: underline;
+}
